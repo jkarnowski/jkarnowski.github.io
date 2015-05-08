@@ -1,0 +1,123 @@
+html {
+  background-color: #E5E5E5;
+}
+
+.header {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 14px;
+  color: #3D8B37;
+  text-align: center;
+}
+
+article {
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 4px;
+  text-align: center;
+}
+
+/* why is there so much space between the cells in a row in the table? */
+table {
+  table-layout: auto;
+  border: none;
+  position: relative;
+  padding: 2px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+tr, td {
+  border: none;
+  position: relative;
+  margin: 10px;
+}
+
+table tr td img {
+  position: relative;
+  margin-right: 60%;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+size {
+  height: 50%;
+  width: 100%;
+}
+
+#alignl {
+  text-align: left;
+}
+
+#alignr {
+  text-align: right;
+}
+
+img {
+  position: relative;
+  left: 40%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+a:link, a:visited {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 0;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+/* why are all the links white? I just want the nav bar links white */
+
+nav a:link, a:visited {
+    width: 120px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #fcfcfc;
+    text-align: center;
+    background-color: #86c67c;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+a:hover, a:active {
+    background-color: #86c67c;
+}
+
+.posts {
+  border: 1px dotted;
+  width: 100%;
+  text-align: left;
+}
+
+li {
+  display: inline;
+}
+
+nav {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+p {
+  font-family: 'Oxygen', sans-serif;
+  color: black;
+  font-size: 11px;
+  text-align: center;
+  margin-left: 10px;
+}
