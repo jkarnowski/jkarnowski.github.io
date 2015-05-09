@@ -1,40 +1,63 @@
-table {
-  table-layout: auto;
-  border: 1px dashed #e5e5e5;
-  position: relative;
-  padding: 3px;
-  margin-left: 300px;
-  width: 50%;
-  text-align: center;
-  margin-bottom: 3em;
+html {
+  background-color: #E5E5E5;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-tr, td {
-  border: 1px solid #e5e5e5;
+nav {
   position: relative;
-  margin: 5px;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
 }
 
 .header {
   font-family: 'Oxygen', sans-serif;
-  font-size: 12px;
-  color: #be2625;
-  text-align: center;
+  font-size: 16px;
+  color: #3D8B37;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li{
+  display:inline;
+}
+
+nav a:link, a:visited {
+    width: 100px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fcfcfc;
+    text-align: center;
+    background-color: #86c67c;
+    padding: 2px;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 4px;
+  text-align: left;
+  font-size: 10px;
 }
 
 p {
-  font-size: 12px;
-  font-family: Tahoma;
+  position: relative;
+  width: 70%;
 }
 
-#bold {
-  font-weight: bold;
-}
-
-a:link, a:visited {
-    font-weight: bold;
-    color: #3d8b37;
-    text-align: center;
-    text-decoration: none;
-    text-transform: lowercase;
+aside {
+  position: fixed;
+  float: right;
+  margin-right; 1em;
+  width: 150px;
 }
