@@ -69,7 +69,7 @@ body section a:hover, a: active; {
 }
 
 /*inside the footer, not the nav bar*/
-body table a:link, a:visited {
+body aside table a:link, a:visited {
     display: block;
     width: 100px;
     font-weight: bold;
@@ -85,6 +85,25 @@ body table a:link, a:visited {
 body table a:hover, a:active {
     background-color: #E5E5E5;
     text-decoration: none;
+}
+
+/*post index a */
+main table a:hover, a:active {
+  font-weight: bold;
+  color: #E5E5E5;
+  background-color: #86c67c;
+  padding: 2px;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+/*post index a */
+main table a:link, a:visited {
+  font-weight: bold;
+  color: #008000;
+  background-color: #E5E5E5;
+  text-decoration: none;
+  text-transform: lowercase;
 }
 
 article {
