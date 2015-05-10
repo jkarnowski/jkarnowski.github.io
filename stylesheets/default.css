@@ -1,17 +1,94 @@
 html {
   background-color: #E5E5E5;
+  font-family: 'Oxygen', sans-serif;
 }
 
 .header {
-  font-family: 'Oxygen', sans-serif;
   font-size: 20px;
+  font-family: 'Trebuchet MS', sans-serif;
   color: #3D8B37;
   text-align: center;
 }
 
+#headerbar {
+  background-color: #A9A9A9;
+}
+
+nav {
+  margin-left: 400px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+}
+/*inside the nav bar */
+body ul a:link, a:visited {
+    display: block;
+    width: 100px;
+    font-weight: bold;
+    color: #fcfcfc;
+    background-color: #86c67c;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+/*inside the nav bar */
+body ul a:hover, a:active {
+    background-color: #008000;
+    text-decoration: none;
+}
+
+/*inside the body, not the nav bar*/
+body section a:link {
+  font-weight: bold;
+  text-decoration: none;
+  padding: 2px;
+  color: #8A2BE2;
+}
+
+/*inside the body, not the nav bar*/
+body section a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: #DC143C;
+}
+
+/*inside the body, not the nav bar*/
+body section a:hover, a: active; {
+  text-decoration: none;
+  padding: 2px;
+  color: #008000;
+}
+
+/*inside the footer, not the nav bar*/
+body table a:link, a:visited {
+    display: block;
+    width: 100px;
+    font-weight: bold;
+    color: #fcfcfc;
+    background-color: #86c67c;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+/*inside the footer */
+body table a:hover, a:active {
+    background-color: #E5E5E5;
+    text-decoration: none;
+}
+
 article {
-  font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -23,7 +100,6 @@ footer {
   text-align: center;
 }
 
-/* why is there so much space between the cells in a row in the table? */
 table {
   table-layout: auto;
   border: none;
@@ -49,11 +125,6 @@ table tr td img {
   margin-bottom: 1em;
 }
 
-size {
-  height: 50%;
-  width: 100%;
-}
-
 #alignl {
   text-align: left;
 }
@@ -64,40 +135,11 @@ size {
 
 img {
   position: relative;
-  left: 40%;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
-a:link, a:visited {
-    font-weight: bold;
-    color: black;
-    text-align: center;
-    padding: 0;
-    text-decoration: none;
-    text-transform: lowercase;
-}
-/* why are all the links white? I just want the nav bar links white */
-
-nav a:link, a:visited {
-    width: 120px;
-    font-weight: bold;
-    font-size: 22px;
-    color: #fcfcfc;
-    text-align: center;
-    background-color: #86c67c;
-    padding: 5px;
-    text-decoration: none;
-    text-transform: lowercase;
-}
-
-a:hover, a:active {
-    background-color: #86c67c;
+#image-header {
+  margin-left: 42%;
 }
 
 .posts {
@@ -106,24 +148,14 @@ a:hover, a:active {
   text-align: left;
 }
 
-li {
-  display: inline;
-}
-
-nav {
-  position: relative;
-  text-align: center;
-  overflow: hidden;
-}
-
 p {
-  font-family: 'Oxygen', sans-serif;
   color: black;
-  font-size: 15px;
+  font-size: 14px;
   text-align: center;
   margin-left: 10px;
 }
 
-#left {
-  text-align: left;
+#strong {
+  font-weight: bold;
+  font-style: italic;
 }
