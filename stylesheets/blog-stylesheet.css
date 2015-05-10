@@ -15,6 +15,7 @@ nav {
   font-size: 16px;
   color: #3D8B37;
   text-align: left;
+  margin-left: 5px;
 }
 
 #headerbar {
@@ -57,6 +58,7 @@ footer {
 p {
   position: relative;
   width: 70%;
+  margin-left: 5px;
 }
 
 aside {
@@ -64,4 +66,10 @@ aside {
   float: right;
   margin-right; 1em;
   width: 150px;
+}
+
+#pos {
+  margin: 10px;
+  position: relative;
+  padding: 2em;
 }
