@@ -17,6 +17,10 @@ nav {
   text-align: left;
 }
 
+#headerbar {
+  background-color: #A9A9A9;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
