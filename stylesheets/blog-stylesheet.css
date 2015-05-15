@@ -12,7 +12,7 @@ nav {
 
 .header {
   font-family: 'Oxygen', sans-serif;
-  font-size: 16px;
+  font-size: 22px;
   color: #3D8B37;
   text-align: left;
   margin-left: 5px;
@@ -26,24 +26,28 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 li{
-  display:inline;
+  display:inline-block;
 }
 
-nav a:link, a:visited {
+nav ul a:link, a:visited {
     width: 100px;
-    display: inline-block;
+    display: block;
     font-weight: bold;
-    font-size: 16px;
     color: #fcfcfc;
-    text-align: center;
     background-color: #86c67c;
-    padding: 2px;
+    text-align: center;
+    padding: 4px;
     text-decoration: none;
     text-transform: lowercase;
+    font-size: 16px;
+}
+
+nav ul a:hover, a:active {
+    background-color: #008000;
+    text-decoration: none;
 }
 
 footer {
@@ -55,10 +59,11 @@ footer {
   font-size: 10px;
 }
 
-p {
+main section p {
   position: relative;
   width: 70%;
   margin-left: 5px;
+  font-size: 15px;
 }
 
 aside {
@@ -72,4 +77,8 @@ aside {
   margin: 10px;
   position: relative;
   padding: 2em;
+}
+
+img {
+  margin: 20px 50px;
 }
