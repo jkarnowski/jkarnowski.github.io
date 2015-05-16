@@ -51,45 +51,60 @@ body ul a:hover, a:active {
     text-decoration: none;
 }
 
-/*inside the body, not the nav bar*/
-body section a:link {
-  font-weight: bold;
-  text-decoration: none;
-  padding: 2px;
-  color: #1E90FF;
-}
-
-/*inside the body, not the nav bar*/
-body section a:visited {
+p a:link {
   font-weight: bold;
   text-decoration: none;
   color: #1E90FF;
 }
 
 /*inside the body, not the nav bar*/
-body section a:hover, a: active; {
+p a:visited {
+  font-weight: bold;
   text-decoration: none;
-  padding: 2px;
+  color: #1E90FF;
+}
+
+/*inside the body, not the nav bar*/
+p a:hover, a: active; {
+  text-decoration: none;
   color: #008000;
 }
 
-/*inside the footer, not the nav bar*/
-body aside table a:link, a:visited {
-    display: block;
-    width: 100px;
+.table-center {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  padding: 10px;
+}
+
+table a:link, a:visited {
+  color: #1E90FF;
+  text-decoration: none;
+  text-align: center;
+}
+
+/*social*/
+body aside a:link, a:visited {
     font-weight: bold;
-    color: #fcfcfc;
-    background-color: #86c67c;
+    color: #1E90FF;
     text-align: center;
-    padding: 4px;
     text-decoration: none;
     text-transform: lowercase;
 }
 
-/*inside the footer */
-body table a:hover, a:active {
+/*social */
+body aside a:hover, a:active {
     background-color: #E5E5E5;
     text-decoration: none;
+}
+
+body aside {
+  clear: both;
+  margin: 5px;
+  text-align: center;
 }
 
 article {
@@ -98,15 +113,11 @@ article {
 }
 
 footer {
- clear: both;
- bottom: 0;
- width: 100%;
- padding: 4px;
- text-align: center;
-}
-
-img {
-  padding: 0;
+  clear:both;
+  margin-bottom: 0px;
+  width: 100%;
+  padding: 4px;
+  text-align: center;
 }
 
 #image-header {
@@ -114,8 +125,8 @@ img {
 }
 
 .thumbnail {
-  float: left;
-  margin: 20px;
+  display: inline-block;
+  margin: 10px;
 }
 
 .posts {
@@ -133,5 +144,5 @@ p {
 
 #strong {
   font-weight: bold;
-  font-style: italic;
+  font-size: 22px;
 }
