@@ -22,13 +22,13 @@ nav {
   background-color: #A9A9A9;
 }
 
-ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-li{
+nav ul li{
   display:inline-block;
 }
 
@@ -50,12 +50,17 @@ nav ul a:hover, a:active {
     text-decoration: none;
 }
 
+main p a:link, a:visited {
+  color: #1E90FF;
+  text-decoration: none;
+}
+
 footer {
   position: relative;
   bottom: 0;
   width: 100%;
   padding: 4px;
-  text-align: left;
+  text-align: center;
   font-size: 10px;
 }
 
@@ -79,6 +84,6 @@ aside {
   padding: 2em;
 }
 
-img {
+main img {
   margin: 20px 50px;
 }

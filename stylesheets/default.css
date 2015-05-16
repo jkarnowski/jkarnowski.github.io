@@ -15,19 +15,22 @@ html {
 }
 
 nav {
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
 }
 
-ul {
+nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-li {
+nav ul li {
   display: inline-block;
 }
+
 /*inside the nav bar */
 body ul a:link, a:visited {
     display: block;
@@ -39,6 +42,7 @@ body ul a:link, a:visited {
     padding: 4px;
     text-decoration: none;
     text-transform: lowercase;
+    font-size: 16px;
 }
 
 /*inside the nav bar */
@@ -52,14 +56,14 @@ body section a:link {
   font-weight: bold;
   text-decoration: none;
   padding: 2px;
-  color: #8A2BE2;
+  color: #1E90FF;
 }
 
 /*inside the body, not the nav bar*/
 body section a:visited {
   font-weight: bold;
   text-decoration: none;
-  color: #DC143C;
+  color: #1E90FF;
 }
 
 /*inside the body, not the nav bar*/
@@ -88,78 +92,30 @@ body table a:hover, a:active {
     text-decoration: none;
 }
 
-/*post index a */
-main table a:hover, a:active {
-  font-weight: bold;
-  color: #E5E5E5;
-  background-color: #86c67c;
-  padding: 2px;
-  text-decoration: none;
-  text-transform: lowercase;
-}
-
-/*post index a */
-main table a:link, a:visited {
-  font-weight: bold;
-  color: #008000;
-  background-color: #E5E5E5;
-  text-decoration: none;
-  text-transform: lowercase;
-}
-
 article {
   font-size: 14px;
   text-align: center;
 }
 
 footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  padding: 4px;
-  text-align: center;
-}
-
-table {
-  table-layout: auto;
-  border: none;
-  position: relative;
-  padding: 1px;
-  width: 100%;
-  text-align: center;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-bottom: 1em;
-}
-
-tr, td {
-  border: none;
-  position: relative;
-  margin: 10px;
-}
-
-table tr td img {
-  position: relative;
-  margin-right: 60%;
-  margin-top: 2em;
-  margin-bottom: 1em;
-}
-
-#alignl {
-  text-align: left;
-}
-
-#alignr {
-  text-align: right;
+ clear: both;
+ bottom: 0;
+ width: 100%;
+ padding: 4px;
+ text-align: center;
 }
 
 img {
-  position: relative;
   padding: 0;
 }
 
 #image-header {
   margin-left: 42%;
+}
+
+.thumbnail {
+  float: left;
+  margin: 20px;
 }
 
 .posts {
