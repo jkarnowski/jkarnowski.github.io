@@ -32,7 +32,7 @@ nav ul li {
 }
 
 /*inside the nav bar */
-body ul a:link, a:visited {
+body nav ul a:link, a:visited {
     display: block;
     width: 100px;
     font-weight: bold;
@@ -46,7 +46,7 @@ body ul a:link, a:visited {
 }
 
 /*inside the nav bar */
-body ul a:hover, a:active {
+body nav ul a:hover, a:active {
     background-color: #008000;
     text-decoration: none;
 }
