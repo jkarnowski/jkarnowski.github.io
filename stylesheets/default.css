@@ -23,6 +23,11 @@ html {
   text-align: center;
 }
 
+div {
+  padding: 2em;
+  text-align: center;
+}
+
 div a:link, a:visited {
   display: block;
   width: 100px;
@@ -68,7 +73,7 @@ body nav ul a:link, a:visited {
   display: block;
   width: 100px;
   font-weight: bold;
-  color: #ffffff;
+  color: #FFFAFA;
   background-color: #86c67c;
   text-align: center;
   padding: 4px;
