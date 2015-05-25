@@ -23,9 +23,17 @@ html {
   text-align: center;
 }
 
-div {
-  padding: 2em;
+div a:link, a:visited {
+  display: block;
+  width: 100px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #86c67c;
   text-align: center;
+  padding: 4px;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size: 16px;
 }
 
 .font-fun {
