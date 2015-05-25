@@ -1,3 +1,16 @@
+/* color combo for blog
+headers / titles: #5ca36a;
+text: black;
+light grey: #ddddd;
+nav bar links: white;
+nav bar block: #86c67c (right now);
+nav bar block, hover background color: #008000 (now);
+links (not nav bar): #66cdaa;
+dark grey: #142030;
+background: #E5E5E5;
+pop out FUN color: #ff4444;
+*/
+
 html {
   background-color: #E5E5E5;
   font-family: 'Oxygen', sans-serif;
@@ -6,12 +19,24 @@ html {
 .header {
   font-size: 20px;
   font-family: 'Trebuchet MS', sans-serif;
-  color: #3D8B37;
+  color: #5ca36a;
   text-align: center;
 }
 
+div {
+  border: 3px solid #142030;
+  padding: 2em;
+  text-align: center;
+}
+
+.font-fun {
+  font-family: "Florence", sans-serif;
+  font-size: 22px;
+  color: #ff4444;
+}
+
 #headerbar {
-  background-color: #A9A9A9;
+  background-color: #dddddd;
 }
 
 nav {
@@ -54,20 +79,20 @@ body nav ul a:hover, a:active {
 p a:link {
   font-weight: bold;
   text-decoration: none;
-  color: #1E90FF;
+  color: #66cdaa;
 }
 
 /*inside the body, not the nav bar*/
 p a:visited {
   font-weight: bold;
   text-decoration: none;
-  color: #1E90FF;
+  color: #66cdaa;
 }
 
 /*inside the body, not the nav bar*/
 p a:hover, a: active; {
   text-decoration: none;
-  color: #008000;
+  color: #66cdaa;
 }
 
 .table-center {
@@ -81,7 +106,7 @@ td {
 }
 
 table a:link, a:visited {
-  color: #1E90FF;
+  color: #66cdaa;
   text-decoration: none;
   text-align: center;
 }
@@ -140,9 +165,4 @@ p {
   font-size: 14px;
   text-align: center;
   margin-left: 10px;
-}
-
-#strong {
-  font-weight: bold;
-  font-size: 22px;
 }
