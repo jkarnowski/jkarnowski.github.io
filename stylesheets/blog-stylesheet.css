@@ -56,16 +56,16 @@ main p a:link, a:visited {
 }
 
 footer {
-  position: relative;
-  bottom: 0;
+  clear: both;
+  bottom: 0px;
   width: 100%;
-  padding: 4px;
+  padding: 0;
   text-align: center;
   font-size: 10px;
 }
 
 main section p {
-  position: relative;
+  clear: both;
   width: 70%;
   margin-left: 5px;
   font-size: 15px;
@@ -86,4 +86,26 @@ aside {
 
 main img {
   margin: 20px 50px;
+}
+
+.circle_left {
+  float: left;
+  border: 2px solid red;
+  border-radius: 70px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  margin-left: 42%;
+}
+
+.circle_right {
+  float: right;
+  border-radius: 70px;
+  border: 2px dashed red;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  margin-right: 42%;
 }
