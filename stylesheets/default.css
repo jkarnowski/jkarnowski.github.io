@@ -57,22 +57,23 @@ nav ul li {
 
 /*inside the nav bar */
 body nav ul a:link, a:visited {
-    display: block;
-    width: 100px;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #86c67c;
-    text-align: center;
-    padding: 4px;
-    text-decoration: none;
-    text-transform: lowercase;
-    font-size: 16px;
+  display: block;
+  width: 100px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #86c67c;
+  text-align: center;
+  padding: 4px;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size: 16px;
 }
 
 /*inside the nav bar */
 body nav ul a:hover, a:active {
-    background-color: #008000;
-    text-decoration: none;
+  color: #dddddd;
+  background-color: #008000;
+  text-decoration: none;
 }
 
 p a:link {
