@@ -19,12 +19,11 @@ html {
 .header {
   font-size: 20px;
   font-family: 'Trebuchet MS', sans-serif;
-  color: #5ca36a;
+  color: #142030;
   text-align: center;
 }
 
 div {
-  border: 3px solid #142030;
   padding: 2em;
   text-align: center;
 }
@@ -109,21 +108,6 @@ table a:link, a:visited {
   color: #66cdaa;
   text-decoration: none;
   text-align: center;
-}
-
-/*social*/
-body aside a:link, a:visited {
-    font-weight: bold;
-    color: #1E90FF;
-    text-align: center;
-    text-decoration: none;
-    text-transform: lowercase;
-}
-
-/*social */
-body aside a:hover, a:active {
-    background-color: #E5E5E5;
-    text-decoration: none;
 }
 
 body aside {
