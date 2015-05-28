@@ -32,7 +32,7 @@ div a:link, a:visited {
   display: block;
   width: 100px;
   font-weight: bold;
-  color: #ffffff;
+  color: #ff4444;
   background-color: #86c67c;
   text-align: center;
   padding: 4px;
@@ -69,11 +69,11 @@ nav ul li {
 }
 
 /*inside the nav bar */
-body nav ul a:link, a:visited {
+nav ul a:link, a:visited {
   display: block;
   width: 100px;
   font-weight: bold;
-  color: #FFFAFA;
+  color: #ddddd;
   background-color: #86c67c;
   text-align: center;
   padding: 4px;
@@ -83,16 +83,17 @@ body nav ul a:link, a:visited {
 }
 
 /*inside the nav bar */
-body nav ul a:hover, a:active {
+nav ul a:hover, a:active {
   color: #dddddd;
   background-color: #008000;
   text-decoration: none;
 }
 
+/*just footer*/
 p a:link {
   font-weight: bold;
   text-decoration: none;
-  color: #66cdaa;
+  color: #ff4444;
 }
 
 /*inside the body, not the nav bar*/
