@@ -122,3 +122,17 @@ main img {
   line-height: 100px;
   margin-right: 42%;
 }
+
+code {
+  overflow: auto;
+  white-space: break-all;
+  background-color: #142030;
+  display: block;
+  font-family: Monaco, Consolas, monospace; 
+  padding: 1em;
+  color: #ff4444;
+  white-space: pre-wrap; 
+  font-size: 85%;
+  line-height: 110%;
+  width: 45%;
+}
