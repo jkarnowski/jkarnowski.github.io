@@ -28,19 +28,6 @@ div {
   text-align: center;
 }
 
-div a:link, a:visited {
-  display: block;
-  width: 100px;
-  font-weight: bold;
-  color: #ff4444;
-  background-color: #86c67c;
-  text-align: center;
-  padding: 4px;
-  text-decoration: none;
-  text-transform: lowercase;
-  font-size: 16px;
-}
-
 .font-fun {
   font-family: "Florence", sans-serif;
   font-size: 22px;
@@ -69,11 +56,11 @@ nav ul li {
 }
 
 /*inside the nav bar */
-nav ul a:link, a:visited {
+nav ul a:link {
   display: block;
   width: 100px;
   font-weight: bold;
-  color: #ddddd;
+  color: #FFFFFF;
   background-color: #86c67c;
   text-align: center;
   padding: 4px;
@@ -83,7 +70,7 @@ nav ul a:link, a:visited {
 }
 
 /*inside the nav bar */
-nav ul a:hover, a:active {
+nav ul a:hover {
   color: #dddddd;
   background-color: #008000;
   text-decoration: none;
@@ -104,7 +91,7 @@ p a:visited {
 }
 
 /*inside the body, not the nav bar*/
-p a:hover, a: active; {
+p a:hover, a:active; {
   text-decoration: none;
   color: #66cdaa;
 }
@@ -119,7 +106,7 @@ td {
   padding: 10px;
 }
 
-table a:link, a:visited {
+table a:link {
   color: #66cdaa;
   text-decoration: none;
   text-align: center;
