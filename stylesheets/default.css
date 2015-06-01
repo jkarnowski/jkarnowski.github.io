@@ -107,11 +107,13 @@ td {
   padding: 10px;
 }
 
+/*blog post table*/
 table a:link {
   color: #66cdaa;
   text-decoration: none;
 }
 
+/*blog post table*/
 table a:hover {
   text-decoration: none;
   color: #ff4444;
