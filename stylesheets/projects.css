@@ -27,12 +27,102 @@ div {
   text-align: center;
 }
 
-.font-fun {
-  font-family: "Florence", sans-serif;
-  font-size: 22px;
-  color: #ff4444;
+.circle {
+  position: relative;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  border: 2px black dashed;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#circletext {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1em;
+  line-height: 1em;
+  font-size: 1em;
+}
+
+.div-right {
+  float: right;
+}
+
+.outside-circle {
+  font-family: Tahoma, sans-serif;
+  font-size: 13px;
+  width:  20%;
 }
 
 #headerbar {
   background-color: #dddddd;
 }
+
+nav {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+/*inside the nav bar */
+nav ul a:link {
+  display: block;
+  width: 100px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #86c67c;
+  text-align: center;
+  padding: 4px;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-size: 16px;
+}
+
+p a:link {
+  color: #ff4444;
+  text-decoration: none;
+}
+
+p a:visited {
+  color: #66cdaa;
+  text-decoration: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  font-size: 10px;
+}
+
+/*inside the nav bar */
+nav ul a:hover {
+  color: #dddddd;
+  background-color: #008000;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
