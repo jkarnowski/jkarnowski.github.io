@@ -23,21 +23,19 @@ header {
 h1 {
   font-size: 1.89em;
   color: #70A897;
-  font-family: Lucida, sans-serif;
 }
-h2 {font-size: 1.571em;
-  font-family: Lucida, sans-serif;
+h2 {
+  font-size: 1.571em;
   } /* 22px */
-h3 {font-size: 1.429em;
-  font-family: Lucida, sans-serif;
+h3 {
+  font-size: 1.429em;
   } /* 20px */
 h4 {
   font-size: 1.22em;
   color: #70A897;
-  font-family: Lucida, sans-serif;
 }
-h6 {font-size: 1em;
-  font-family: Tahoma, sans-serif;
+h6 {
+  font-size: 1em;
   color: #70A897;
   } /* 14px */
 

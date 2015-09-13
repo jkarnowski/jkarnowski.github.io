@@ -13,7 +13,7 @@ pop out FUN color: #ff4444;
 
 html {
   background-color: #E5E5E5;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Raleway Dots', cursive;
 }
 
 nav {
@@ -24,7 +24,6 @@ nav {
 }
 
 .header {
-  font-family: 'Oxygen', sans-serif;
   font-size: 22px;
   color: #5ca36a;
   text-align: left;
@@ -128,7 +127,6 @@ code {
   white-space: break-all;
   background-color: #142030;
   display: block;
-  font-family: Monaco, Consolas, monospace; 
   padding: 1em;
   color: #ff4444;
   white-space: pre-wrap; 
