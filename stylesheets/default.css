@@ -12,7 +12,7 @@ pop out FUN color: #ff4444;
 */
 
 html {
-  background-color: #E5E5E5;
+  background-color: #dddddd;
   font-family: 'Raleway Dots', cursive;
 }
 
@@ -85,13 +85,13 @@ p a:link {
 p a:visited {
   font-weight: bold;
   text-decoration: none;
-  color: #66cdaa;
+  color: white;
 }
 
 /*inside the body, not the nav bar*/
 p a:hover, a:active; {
   text-decoration: none;
-  color: #66cdaa;
+  color: white;
 }
 
 .table-center {
