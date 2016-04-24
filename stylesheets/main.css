@@ -2,6 +2,10 @@
 /*GREEN: #2ecc71 */
 /*SILVER #bdc3c7*/
 
+.debug {
+    outline: 2px solid red;
+}
+
 /*Fun other color: #2c3e50 */
 
 /*
@@ -37,7 +41,7 @@
     mobile container leaves some whitespace on the sides
 */
 .container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -63,7 +67,7 @@
 /* 800px */
 @media (min-width: 50em) {
     .container {
-        width: 45em; /* 720px */
+        width: 55em; /* 720px */
     }
 
     .gutters-t .col {
@@ -107,7 +111,7 @@
 /* 1200px */
 @media (min-width: 75em) {
     .container {
-        width: 64em; /* 1024px */
+        width: 100%; /* 1024px */
     }
 
     .gutters-t .col {
