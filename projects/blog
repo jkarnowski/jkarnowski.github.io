@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Oh, She Codes!</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="stylesheets/blog-stylesheet.css">
+</head>
+
+  <img src="imgs/sf.png" alt="San Francisco" height="220" width=100% />
+
+  <nav>
+    <ul>
+      <li><a href="/about_me.html">About Me</a></li>
+      <li><a href="/blog_posts.html">Blog</a></li>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/snapshots.html">Fun</a></li>
+      <li><a href="mailto:jaclyn.karnowski@gmail.com">Contact</a></li>
+    </ul>
+  </nav>
+
+<main>
+  <header>
+    <h3 class="header">Learning JavaScript basics in 4 days</h3>
+    <h5>16 de junio 2015</h5>
+  </header>
+
+  <section>
+    <h3 class="header"><So, I got married last Friday.</h3>
+    <p>
+     hey world, I'm a married woman now! Needless to say, my study routine was a bit....shortened and hastened last week. I didn't spend as much time studying as I have up to this point and I can feel it. The great thing is that I learned enough JavaScript to dive into some challenges and get some code working in 3 days before the trip and picked it back up after a four day marriage break.
+    </p>
+    <p>A few things came up while learning JavaScript in just 4 days.
+      <ul>
+        <li>how is a function different than a method?</li>
+        <li>what's with the weird syntax?</li>
+        <li>looping. when will I have my ah-ha moment with setting up loops?</li>
+        <li>WHY JavaScript? Why would I choose to use JavaScript? What situation calls for me to go into my JavaScript skills? When do I use it (versus Ruby?)</li>
+    </p>
+    <p>
+      <img src="js_ruby.png" alt="JS versus Ruby" height="auto" width="auto" />
+
+  </section>
+
+</main>
+
+  <footer>
+    <p>Posted by: Jaclyn Karnowski</p> <p>curious? reach out! <a href="mailto:jaclyn.karnowski@gmail.com">jaclyn.karnowski@gmail.com</a></p>
+  </footer>
+
+</html>
+

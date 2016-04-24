@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Oh, She Codes!</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<img src="../imgs/sf.png" alt="San Francisco" height="220" width=100% />
+
+<nav>
+  <ul>
+    <li><a href="/about_me.html">About Me</a></li>
+    <li><a href="/blog_posts.html">Blog</a></li>
+    <li><a href="/projects.html">Projects</a></li>
+    <li><a href="/snapshots.html">Fun</a></li>
+    <li><a href="mailto:jaclyn.karnowski@gmail.com">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <header>
+    <h3 class="header">Keep the Fridge Organized!</h3>
+    <h5>9 de mayo 2015</h5>
+  </header>
+
+  <section>
+    <h3>What are the differences between relative, absolute, and fixed positioning?</h3>
+
+    <p>I'm going to explain 3 possible ways to organize the elements on your website. You know, the big title at the top, the little footer that talks about the copyright and why all the stuff in between is located where it is located.</p>
+
+    <p>But before I do that, go check out your fridge. Open it up and look for a few things:
+      <ol>
+        <li>1. How many shelves do you have in your fridge? I have 2 plus the top of the drawer.Now, check out how many tupperwares are stacked on a shelf. <em>None? Impressive</em>.</li><br />
+        <li>2. Check out the goodies in the shelves of the door. Pickles? Strawberry jam?</li><br />
+        <li>3. The drawer at the bottom. Maybe its full of some old onions. Go ahead and clean that out then come back.</li><br />
+        <li>4. **tricky** Find something invading the space of some food. Maybe an apple rolled into another plastic bag. Maybe your celery is poking the strawberries.Something not so neat and organized.</li><br />
+      </ol>
+
+    <h3>How does a fridge relate to CSS positioning? Great question!</h3>
+
+    <p>1. So the drawer at the bottom of the fridge is always there. So is a **fixed** element. Go to the last website you visited. Scroll up and down. Change the size of the browser on your screen. Did one thing always stay in the same position? That is a fixed element. It usually is the footer (or expensive advertising).</p>
+
+    <span id="pos"><img src="fixed1.png" alt="fixed1" height="150" width="150" />
+    <span id="pos"><img src="fixed2.png" alt="fixed1" height="150" width="150" />
+
+    <p>2. Next up? The shelves. They fit into the fridge because their height and width are **relative** to the shelves that are inside. The shelves are like relative elements. They go where they best fit relative to the bigger picture.</p><br />
+    <p>3. The drawer is our next element in the fridge. It stays put at the bottom and doesn't move even when you take out the shelves above it. It is **relative**. If you want to move the shelves, they have to move around the drawer. That means it is the Big Daddy and the parent - the shelves do what the drawer gives them space to do.</p><br />
+
+    <span id="pos"><img src="relative1.png" alt="rel1" height="150" width="150" />
+    <span id="pos"><img src="relative2.png" alt="rel2" height="150" width="150" />
+
+
+    <p>4. That stuff, an apple, that invades something else, the lettuce, means that the apple moves where it wants regardless of what else is around it. It can overlap things but doesn't affect the properties of the lettuce. The lettuce is still edible. So the apple is **absolute** because it moves in relation to something else, a parent. The parent could be the drawer where it is located or the fridge if its just floating in an undefined part of the fridge.<p>
+
+    <span id="pos"><img src="abs1.png" alt="rel1" height="150" width="150" />
+    <span id="pos"><img src="abs2.png" alt="rel2" height="150" width="150" />
+
+    <h5>the code:</h5>
+      <p>
+        <em>coming soon! I want to figure out a better way to show the visual changes with the code. Me and markdown are in a battle right now.</em>
+      </p>
+
+  </section>
+
+</main>
+
+  <footer>
+    <p>Posted by: Jaclyn Karnowski</p> <p>curious? reach out! <a href="mailto:jaclyn.karnowski@gmail.com">jaclyn.karnowski@gmail.com</a></p>
+  </footer>
+
+</html>
+

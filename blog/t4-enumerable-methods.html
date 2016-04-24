@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Oh, She Codes!</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+  <img src="../imgs/sf.png" alt="San Francisco" height="220" width=100% />
+
+  <nav>
+    <ul>
+      <li><a href="/about_me.html">About Me</a></li>
+      <li><a href="/blog_posts.html">Blog</a></li>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/snapshots.html">Fun</a></li>
+      <li><a href="mailto:jaclyn.karnowski@gmail.com">Contact</a></li>
+    </ul>
+  </nav>
+
+<main>
+  <header>
+    <h3 class="header">Enumerable Module in Ruby</h3>
+    <h5>24 de mayo 2015</h5>
+  </header>
+
+  <section>
+    <h4>What does 'enumerable' mean?</h4>
+    <p>
+    Before we dive into 'enumerables' you should know my background with this Ruby term. I learned it about 5 days ago. Maybe 3 days ago? I can't remember if I saw it on a blog, in the Ruby Docs or in my new book, "The Well Grounded Rubyist." The WGR by David Black is full of dense technical jargon that is slowly weaving into my thoughts. It is dense. Useful, yes. It's my first technical book ever. And there are no visuals. I am a multimodal learner and this book is 100% text.
+    </p>
+    <p>
+    What does a multi-modal learner do when she sees paragraph after paragraph of text? Draw it out. I draw out this diagram to understand how enumerables are related to collections: arrays, hashes and ranges.
+    <figure>
+      <img src="collection_no_enum.png" alt="no enum" height="25%" width="25%" />
+      <img src="collection_w_enum.png" alt="w enum" height="30%" width="25%" />
+    </figure>
+    </p>
+    <p>
+       By including Enumerable in a class, you get more power to your class!
+       <ul>
+        <li>methods packed into the Enumerable module are mixed into the methods inherited with the class Array / Hash / Range.</li>
+        <li>the array is the most generic way to spit out the results from enum methods like <code>select</code> or <code>filter</code>.</li>
+      </ul>
+    </p>
+    <h3>What does #map do?</h3>
+    <p><code>map</code> will return a new array based on the code block that is executed on each element of the collection. A few key points about the map method in Enumerable module:
+      <ul>
+        <li>always returns an array with the same quantity of elements as the original array</li>
+        <li>each element has been run through the code block</li>
+        <li><code>return</code> is KING with #map</li>
+      </ul>
+    </p>
+    <h3>see #map run</h3>
+    <p><code>array = [2,4,6]</code><br>
+      <code>result = array.map { |num| num**2 }</code>
+    </p>
+    <figure>
+      <img src="map_code.png" alt="irb code" />
+    </figure>
+    <p>Notice that the code block ran on each element and that our result is an array with the returned values. The code was executed and now our array displays that result.
+    </p>
+    <p>When would you use #map? When you want access to the return value of your code block.note: this will only make sense if you have a strong understanding of the difference between puts, print and return.
+    </p>
+    <p>I totally acknowledge that this is an initial understanding of Enumerables and I may even have some gaps or misunderstandings that need to be ironed out. This blog post is like my first time driving - I did it, I accessed the key information to move the car but I have no idea how to harness the power of the vehicle to drive through a snowstorm or parallel park with grace.
+    </p>
+
+  </section>
+
+</main>
+
+  <footer>
+    <p>Posted by: Jaclyn Karnowski</p> <p>curious? reach out! <a href="mailto:jaclyn.karnowski@gmail.com">jaclyn.karnowski@gmail.com</a></p>
+  </footer>
+
+</html>
+

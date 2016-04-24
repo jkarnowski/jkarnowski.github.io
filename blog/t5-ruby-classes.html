@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Oh, She Codes!</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+  <img src="../imgs/sf.png" alt="San Francisco" height="220" width=100% />
+
+  <nav>
+    <ul>
+      <li><a href="/about_me.html">About Me</a></li>
+      <li><a href="/blog_posts.html">Blog</a></li>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/snapshots.html">Fun</a></li>
+      <li><a href="mailto:jaclyn.karnowski@gmail.com">Contact</a></li>
+    </ul>
+  </nav>
+
+<main>
+  <header>
+    <h3 class="header">Classes in Ruby</h3>
+    <h5>27 de mayo 2015</h5>
+  </header>
+  <p>So, you've been working with strings and variables, the objects, and applying methods to them. Every object is part of a class. FixNum is the class for numbers, Array is the class about arrays. That means when I set up an array, I am inheriting the characteristics established in the class Array. Let's go one step further: if Ruby doesn't have a class for something I need, I can create one.</p>
+  <p>Classes are powerful! Think of a class as a parent: the object that provides the DNA. Maybe you inherited your green eyes from your dad and your long legs from your Mom. But your behavior: how you act and react in this crazy world, that is all you. Same with the ojects in Ruby. The class provides the structure but when you <em>instantiate</em> an object from a class, you set the unique behaviors of that class.</p>
+  <p>Some important things I've learned about classes:
+    <ul>
+      <li>a class holds instance variables, unique to that class. If succulents are a type of class, all the different types of succulents are instances - or unique objects - of that category. Go a step up: you've got a class of plants.</li>
+      <li>a class is initialized when you call it from outside. So, a class doesn't just produce its own object by being there. You want a new Plant? Create one! How?<code>new_plant = Plant.new("sunflower")</code>.</li>
+      <li>a class can talk to other classes.</li>
+      <li>inside the class are the instance variables and methods</li>
+      <li>each instance of a class is unique and its own object.</li>
+    </ul>
+
+  <section>
+    <h3 class="header">What's a Class?</h3>
+    <p>
+     Let's talk about Plants again and start simple.  
+    </p>
+    <p><code>
+      class Plants
+        def initialize(plant)
+          @plant = plant
+        end
+      end #end of class
+
+      new_plant = Plants.new("sunflower")</code></p> 
+      <p>What just happened? new_plant is our newly established instance of plant. A sunflower plant exists.</p>
+      <p>Now let's do something with our sunflower plant.<code>
+        class Plants
+          def initialize(plants)
+            @plant = plant
+          end
+
+          def height
+            height = rand(1..10) 
+            puts "Your #{@plant} is #{height} centimeters tall."
+          end
+
+          def bloom
+            @petals = rand(3..20)
+            if @petals > 10
+              puts "It is spring! Your #{@plant} has #{@petals} petals."
+            else
+              puts "Must be the end of summer, you only have #{@petals} petals."
+            end
+          end
+          </code><br>
+          Now we can create an instance of the class Plants AND do something!<br>
+          <code>plant_1 = Plants.new("daffodil")
+            plant_1.height</code> => will give us the height. This is what I got in irb:<code>irb(main):012:0> plant_2 = Plants.new("tulip")
+            => #<Plants:0x007fcc58985950 @plant="tulip">
+            irb(main):013:0> plant_2.height
+            Your plant is 27 cm tall.</code></p>
+      <p>This is just the beginning of classes! I want to practice setting them up, creating instances of different classes and research more about the built-in Ruby classes.</p>
+
+  </section>
+
+</main>
+
+  <footer>
+    <p>Posted by: Jaclyn Karnowski</p> <p>curious? reach out! <a href="mailto:jaclyn.karnowski@gmail.com">jaclyn.karnowski@gmail.com</a></p>
+  </footer>
+
+</html>
+

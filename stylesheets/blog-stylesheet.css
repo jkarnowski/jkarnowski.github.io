@@ -1,0 +1,136 @@
+/* color combo for blog
+headers / titles: #5ca36a;
+text: black;
+light grey: #ddddd;
+nav bar links: white;
+nav bar block: #86c67c (right now);
+nav bar block, hover background color: #008000 (now);
+links (not nav bar): #66cdaa;
+dark grey: #142030;
+background: #E5E5E5;
+pop out FUN color: #ff4444;
+*/
+
+html {
+  background-color: #E5E5E5;
+  font-family: 'Raleway Dots', cursive;
+}
+
+nav {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+}
+
+.header {
+  font-size: 22px;
+  color: #5ca36a;
+  text-align: left;
+  margin-left: 5px;
+}
+
+#headerbar {
+  background-color: #ddddd;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li{
+  display:inline-block;
+}
+
+nav ul a:link, a:visited {
+    width: 100px;
+    display: block;
+    font-weight: bold;
+    color: #fcfcfc;
+    background-color: #86c67c;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 16px;
+}
+
+nav ul a:hover, a:active {
+    background-color: #008000;
+    text-decoration: none;
+}
+
+main p a:link, a:visited {
+  color: #66cdaa;
+  text-decoration: none;
+}
+
+footer {
+  clear: both;
+  bottom: 0px;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  font-size: 10px;
+}
+
+main section p {
+  clear: both;
+  width: 70%;
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+aside {
+  position: fixed;
+  float: right;
+  margin-right; 1em;
+  width: 150px;
+}
+
+#pos {
+  margin: 10px;
+  position: relative;
+  padding: 2em;
+}
+
+main img {
+  margin: 20px 50px;
+}
+
+.circle_left {
+  float: left;
+  border: 2px solid red;
+  border-radius: 70px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  margin-left: 42%;
+}
+
+.circle_right {
+  float: right;
+  border-radius: 70px;
+  border: 2px dashed red;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  margin-right: 42%;
+}
+
+code {
+  overflow: auto;
+  white-space: break-all;
+  background-color: #142030;
+  display: block;
+  padding: 1em;
+  color: #ff4444;
+  white-space: pre-wrap; 
+  font-size: 85%;
+  line-height: 110%;
+  width: 45%;
+}

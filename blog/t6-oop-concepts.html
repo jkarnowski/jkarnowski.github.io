@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Oh, She Codes!</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+  <img src="../imgs/sf.png" alt="San Francisco" height="220" width=100% />
+
+  <nav>
+    <ul>
+      <li><a href="/about_me.html">About Me</a></li>
+      <li><a href="/blog_posts.html">Blog</a></li>
+      <li><a href="/projects.html">Projects</a></li>
+      <li><a href="/snapshots.html">Fun</a></li>
+      <li><a href="mailto:jaclyn.karnowski@gmail.com">Contact</a></li>
+    </ul>
+  </nav>
+
+<main>
+  <header>
+    <h3 class="header">Object-Oriented Programming in Ruby</h3>
+    <h5>27 de mayo 2015</h5>
+  </header>
+  <section>
+    <h3 class="header">So much to learn! Let's talk about: Blocs, Procs, and Lambdas</h3>
+    <h4>First up: blocks</h4>
+      <p>blocks > just some syntax and oh yeah, <strong>blocks are not objects</strong>.That is really important! So, if you want to apply the same code block to various parts of your program, you'd have to write that code every single time. That is not what POODR recommends because rule #1 is DRY: don't repeat yourself.
+      </p>
+      <p>a block is identified with do .... end or {|thing| action on thing }.
+        <code> def yield_test
+    puts "we are in the method"
+    puts "........"
+    yield
+    puts "back inside!"
+  end
+
+  yield_test {puts "coming in from the outside!"}</code>
+  Want to see it live? Head <a href="http://repl.it/rLk">here</a>.
+      </p>
+      <h4>Next: Procs</h4>
+      <p>Proc: a way to save a chunk of code and run it again. Why is that so powerful? Because let's say you want to apply the same code block in 10 different places in your program. Instead of writing the code 10 times, you write it once, save it as a Proc and the invoke the Proc the next 9 times.
+      </p>
+      <p>what does it look like?</p>
+      <code>multiple_of_5 = Proc.new do |number|
+                    number % 5 == 0
+                  end</code>
+      <p>Now, let's see the Proc in action:
+      <code>(1..100).to_a.select(&multiple_of_5)
+      </code>
+      </p>
+      <p>Here's what I got in irb with that code snippet:</p>
+      <img src="proc.png" alt="proc_in_irb" />
+      <p>What are the advantages to setting up a Proc?</p>
+      <p>
+        <ul>
+          <li>Keeps your code DRY. Once you write the block, it shouldn't have to be re-written a bunch of times. Be efficient and save space. Write it once.</li>
+          <li>Procs are objects and you can call a method on it. You can't do that with code blocks.</li>
+          <li>Easiest way to call a Proc? #call method. Yeah. That easy.</li>
+          <code>hi = Proc.new do
+          puts "happy friday!"
+        end
+
+hi.call</code></li>
+          </ul>
+          <p>run it and see what happens!</p>
+          <p>Note: a proc treats <strong>return</strong>like an exit. If you've got a Proc inside a method and run the method, your proc will execute then leave the method. I'm still trying to wrap my head around that idea.</p>
+    <h4>And...Lambdas</h4>
+      <p>Lambdas also are <strong>objects</strong>. I'm catching on to this idea that Ruby is powerful because it is object-oriented. Just like a person can send and receive messages, objects in Ruby can send and receive messages. And, each object has its own behaviors and way of being. Just like each of us are unique with our own personalities, we can set up objects with specific characteristics that makes them unique. <em>shoot, if I'm off on this...someone save me!</em></p>
+      <p>Lambdas are similar to Procs. What is different?</p>
+      <p>
+        <ol>
+          <li>lambda syntax is different. Duh, but not so.<code> test = lambda {|word| word.to_sym }</code></li>
+          <li>lambda checks the number of arguments you pass through but a Proc doesn't.</li>
+          <li>lambda + <strong>return</strong>: returns your lambda and then continues with the rest of method. This is a big difference from Proc!</li>  
+          <li>seems like control flow behaviors are interesting and I'll need to play around and report back.</li>
+        </ol>
+        
+  </section>
+
+</main>
+
+  <footer>
+    <p>Posted by: Jaclyn Karnowski</p> <p>curious? reach out! <a href="mailto:jaclyn.karnowski@gmail.com">jaclyn.karnowski@gmail.com</a></p>
+  </footer>
+
+</html>
+
