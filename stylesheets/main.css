@@ -2,6 +2,11 @@
 /*GREEN: #2ecc71 */
 /*SILVER #bdc3c7*/
 
+html {
+    font-family: "Raleway Dots";
+    text-align: left;
+}
+
 .debug {
     outline: 2px solid red;
 }
